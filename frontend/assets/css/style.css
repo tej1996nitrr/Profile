@@ -592,9 +592,9 @@ margin-top: 30px;
     overflow-x: scroll;
 }
 .card {
-    height: 350px;
-    width: 400px;
-    min-width: 250px;
+    height: 150px;
+    width: 200px;
+    min-width: 150px;
     padding: 1.5rem;
     border-radius: 16px;
     background: #17141d;
@@ -665,13 +665,13 @@ margin-top: 30px;
 }
 
 .image-logo img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-
+margin-left: -20px;
     display: block;
     overflow: hidden;
-    margin: .25rem 60px auto;
+
 }
 .image-logo img:hover{
     transform: scale(1.1);
