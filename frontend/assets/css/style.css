@@ -590,6 +590,7 @@ margin-top: 30px;
     display: flex;
     padding: 3rem;
     overflow-x: scroll;
+    background-color:#20252C ;
 }
 .card {
     height: 150px;
