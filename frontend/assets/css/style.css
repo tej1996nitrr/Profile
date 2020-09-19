@@ -586,4 +586,167 @@ margin-top: 30px;
     right: 10%;
   }
 }
-  
+.card-list {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+}
+.card {
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+    margin: 0;
+    scroll-snap-align: start;
+    clear: both;
+    position: relative;
+}
+.card:focus-within~.card, .card:hover~.card {
+    transform: translateX(130px);
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+}
+
+.card:not(:first-child) {
+    margin-left: -130px;
+}
+
+
+.card-header {
+    margin-bottom: auto;
+}
+
+.card-header p {
+    font-size: 14px;
+    margin-left: 500px;
+    margin: 0 0 1rem;
+    color: #7a7a8c;
+}
+
+.card-header h2 {
+    font-size: 20px;
+    margin: .25rem 55px auto;
+    text-decoration: none;
+    color: inherit;
+    border: 0;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.card-header h2:hover {
+    background: linear-gradient(90deg,#ff8a00,#e52e71);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.card-author {
+    margin: 3rem 0 0;
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    position: relative;
+}
+
+.image-logo {
+    grid-area: auto;
+    align-self: start;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.image-logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    display: block;
+    overflow: hidden;
+    margin: .25rem 60px auto;
+}
+.image-logo img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+.author-name {
+    grid-area: auto;
+    box-sizing: border-box;
+}
+
+.author-name-prefix {
+    font-style: normal;
+    font-weight: 700;
+    color: #7a7a8c;
+}
+
+.half-circle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 48px;
+    fill: none;
+    stroke: #ff8a00;
+    stroke-width: 8;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+.circle-percent{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 20px;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+
+    stroke-linecap: round;
+    pointer-events: none;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill:none;
+    stroke: #e6e4e4;
+    stroke-width: 6;
+    stroke-linecap: 10;
+    transform: translate(5px, 5px);
+}
+svg circle:nth-child(2){
+    stroke-dashoffset: 440;
+    stroke-dasharray: 440;
+}
+/* calc(440px - (440px * 90px) / 100px) */
+.card:nth-child(odd) svg circle:nth-child(2)
+{   stroke-dashoffset: 100px;
+    stroke: #1da1f2;
+}
+.card:nth-child(even) svg circle:nth-child(2)
+{  stroke-dashoffset: 200px;
+    stroke: #f05924;
+}
+.percent .number{
+        position: relative;
+        align-items: center;
+        justify-items: center;
+        margin-left: 73px;
+        margin-bottom: 40px;
+        /* padding: 70px; */
+        /* position:absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; */
+       
+}
