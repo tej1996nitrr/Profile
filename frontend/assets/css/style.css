@@ -196,6 +196,7 @@ img{
   row-gap: 1rem;
 }
 .home__data{
+    margin-top: 20px;
   align-self: center;
 }
 .home__title{
@@ -206,6 +207,7 @@ img{
   color: var(--first-color);
 }
 .home__social{
+margin-top: 30px;
   display: flex;
   flex-direction: column;
 }
