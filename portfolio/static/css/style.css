@@ -82,6 +82,16 @@ img{
 }
 
 /*===== CLASS CSS ===== */
+.tag {
+  display: inline-block;
+  color:#fff;
+  background-color: #333333;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 2px 5px;
+  font-size: 12px;
+}
+
 .section-title{
   position: relative;
   font-size: var(--h2-font-size);
@@ -750,4 +760,8 @@ svg circle:nth-child(2){
         justify-content: center;
         align-items: center; */
        
+}
+.link{
+  color: rgb(86, 189, 248);
+  font-size: 11px;
 }
