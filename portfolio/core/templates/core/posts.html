@@ -60,12 +60,13 @@ padding-top: 1rem;
     <h2 class="section-title">Projects</h2>
 
     <div class="work__container bd-grid">
-    {% for post in posts %}     
+    {% for post in posts %}    
+    
        <div class="work__img">
                 <a href="{%  url 'post' post.id %}"><img src="{{post.url}}" alt=""></a>
                 <div class="post-preview">
                     <h4 class="post-title">{{post.headline}}</h4>
-                    <p class="post-intro">{{post.body}}</p> 
+                    <p class="post-intro">{{post.overview}}</p> 
                   
                     <a class="link" href="{%  url 'post' post.id %}">Read More</a>  
                     <hr>
