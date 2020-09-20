@@ -53,6 +53,14 @@ sr.reveal('.about__img',{});
 sr.reveal('.about__subtitle',{delay: 400}); 
 sr.reveal('.about__text',{delay: 400}); 
 
+/*SCROLL POST*/
+sr.reveal('.post__img',{}); 
+sr.reveal('.post__subtitle',{delay: 400});
+sr.reveal('.post__text',{delay: 400}); 
+sr.reveal('.tag',{});
+sr.reveal('.tag-post',{});
+
+
 /*SCROLL SKILLS*/
 sr.reveal('.skills__subtitle',{}); 
 sr.reveal('.skills__text',{}); 

@@ -2,10 +2,29 @@
 {% load static %}
 {% block content %}
 
-<h1>Post Title</h1>
-<div class="work__img">
-    <h1>Post Title</h1>
-    <img src="{% static 'img/work1.jpg' %}" alt="">
-</div>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga incidunt nobis assumenda repellendus itaque consequuntur eaque explicabo, nostrum dolore ullam praesentium porro! Maiores laboriosam voluptatem, quas error quia quo asperiores.</p>
+
+<section class="post section">
+    <h2 class="section-title">{{post.headline}}</h2>
+
+    <div class="post__container">
+        <div class="post__img">
+            <img src="{{post.url}}" alt="">
+        </div>
+        
+        
+        {% for tag in post.tags.all %} 
+                    <span class="tag-post">{{tag}}</span>
+         {% endfor %}  
+        <hr>
+        <div>
+            <h2 class="post__subtitle">Project Line</h2>
+            <p class="post__text">{{post.body}}</div>
+        <div>
+            <h2 class="post__subtitle">Project Overview</h2>
+        </div>
+    </div>
+       
+  
+</section>
+
 {% endblock content %}

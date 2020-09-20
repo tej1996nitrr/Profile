@@ -91,6 +91,16 @@ img{
   padding: 2px 5px;
   font-size: 12px;
 }
+.tag-post {
+  display: inline-block;
+  color:#fff;
+  background-color: #2d3a47;
+  border-radius: 5px;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 5px 5px;
+  font-size: 12px;
+}
 
 .section-title{
   position: relative;
@@ -764,4 +774,41 @@ svg circle:nth-child(2){
 .link{
   color: rgb(86, 189, 248);
   font-size: 11px;
+}
+
+/* POST */
+.post-div{
+  align-items: center;
+}
+.post__container{
+  row-gap: 2rem;
+  text-align: center;
+}
+.post__subtitle{
+  margin-bottom: var(--mb-2);
+  margin-top: 50px;
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.post__img{
+  
+  width: auto;
+  height: auto;
+  padding-left: 100px;
+  padding-right:100px;
+  padding-bottom: 100px;
+  
+}
+/* .post__img img:hover{
+  transform: scale(1.1);
+  transition: 0.5s;  
+} */
+
+.post__text{
+  margin-bottom: var(--mb-2);
+  text-align: left;
+  margin-left: 150px;
+ 
+  margin-right: 150px;
 }
