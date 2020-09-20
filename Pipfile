@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 django-livesync = "*"
 django-livereload = "*"
+django-filter = "*"
 
 [requires]
 python_version = "3.8"
