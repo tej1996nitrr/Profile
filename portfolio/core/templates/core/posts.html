@@ -2,6 +2,19 @@
 {% load static %} 
 {% block content %}
 
+<!--===== SEARch=====-->
+
+<section class="contact section" >
+    <h2 class="section-title">Search</h2>
+
+    <div class="contact__container bd-grid">
+        <form  method="GET" action="" class="contact__form">
+            {{myfilter.form}}
+            <input type="submit" value="Search" class="contact__button button">
+        
+        </form>
+    </div>
+</section>
 <section class="work section">
               
     <h2 class="section-title">Projects</h2>

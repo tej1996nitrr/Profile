@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import  Skills, Post
 # Create your views here.
+from .filters import  PostFilter
 
 def home(request):
     posts = Post.objects.filter(active=True, featured=True)[0:5]
@@ -12,7 +13,9 @@ def home(request):
 
 def posts(request):
     posts = Post.objects.all()
-    context = {'posts':posts}
+    myfilter = PostFilter()
+    context = {'posts':posts, 'myfilter': myfilter}
+
     return render(request, 'core/posts.html', context)
 
 def post(request, pk):
