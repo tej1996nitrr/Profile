@@ -22,8 +22,9 @@ class Post(models.Model):
     body = models.TextField(null=True, blank=True)
     url = models.URLField(default="https://google.com")
     tags = models.ManyToManyField(Tag, null=True, blank=True)
+    overview = models.TextField(null=True, blank=True)
     github = models.URLField(default="https://google.com")
-    
+
 	
     def __str__(self):
         return self.headline

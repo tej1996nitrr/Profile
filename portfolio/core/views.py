@@ -4,7 +4,7 @@ from .models import  Skills, Post
 from .filters import  PostFilter
 
 def home(request):
-    posts = Post.objects.filter(active=True, featured=True)[0:5]
+    posts = Post.objects.filter(active=True, featured=True)[0:6]
     skills = Skills.objects.all()
     context = {'posts':posts, 'skills':skills}
     
