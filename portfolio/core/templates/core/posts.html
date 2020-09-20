@@ -1,5 +1,26 @@
 {% extends 'core/layout.html' %}
-
+{% load static %} 
 {% block content %}
-<h1>Posts!!</h1>
+
+<section class="work section">
+              
+    <h2 class="section-title">Projects</h2>
+
+    <div class="work__container bd-grid">
+        {% for post in posts %}
+        
+       <div class="work__img">
+                <a href="http://google.com"><img src="{{post.url}}" alt=""></a>
+                <div class="post-preview">
+                    <h4 class="post-title">{{post.headline}}</h4>
+                    <p class="post-intro">{{post.body}}</p>                                 
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+   
+
+</section>
+
 {% endblock content %}
