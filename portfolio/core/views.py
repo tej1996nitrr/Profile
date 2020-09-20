@@ -1,9 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import  Skills, Post
 # Create your views here.
 
 def home(request):
-    return render(request, 'core/index.html')
+    posts = Post.objects.filter(active=True, featured=True)[0:3]
+    skills = Skills.objects.all()
+    context = {'posts':posts, 'skills':skills}
+    
+    return render(request, 'core/index.html', context)
 def posts(request):
     return render(request, 'core/posts.html')
 def post(request):
