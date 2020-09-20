@@ -478,6 +478,7 @@ margin-top: 30px;
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+  margin-top: 15px;
 }
 /* ===== FOOTER =====*/
 .footer{
@@ -570,7 +571,7 @@ margin-top: 30px;
     column-gap: 2rem;
   }
   .contact__form{
-    width: 360px;
+    width: 760px;
   }
   .contact__container{
     justify-items: center;
