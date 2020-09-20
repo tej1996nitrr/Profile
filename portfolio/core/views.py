@@ -9,8 +9,12 @@ def home(request):
     context = {'posts':posts, 'skills':skills}
     
     return render(request, 'core/index.html', context)
+    
 def posts(request):
-    return render(request, 'core/posts.html')
+    posts = Post.objects.all()
+    context = {'posts':posts}
+    return render(request, 'core/posts.html', context)
+
 def post(request):
     return render(request, 'core/post.html')
 # def profile(request):

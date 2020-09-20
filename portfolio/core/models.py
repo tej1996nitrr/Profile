@@ -8,6 +8,11 @@ class Skills(models.Model):
     def __str__(self):
         return self.skill
 
+class Tag(models.Model):
+	name = models.CharField(max_length=200)
+
+	def __str__(self):
+		return self.name
 class Post(models.Model):
 
     headline = models.CharField(max_length=200)
@@ -16,6 +21,7 @@ class Post(models.Model):
     featured = models.BooleanField(default=False)
     body = models.TextField(null=True, blank=True)
     url = models.URLField(default="https://google.com")
+    tags = models.ManyToManyField(Tag, null=True, blank=True)
 	
     def __str__(self):
         return self.headline
