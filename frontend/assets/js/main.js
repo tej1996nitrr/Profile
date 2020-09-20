@@ -52,7 +52,7 @@ sr.reveal('.button',{delay: 200});
 sr.reveal('.about__img',{}); 
 sr.reveal('.about__subtitle',{delay: 400}); 
 sr.reveal('.about__text',{delay: 400}); 
-
+sr.reveal('.contact__form',{})
 /*SCROLL SKILLS*/
 sr.reveal('.skills__subtitle',{}); 
 sr.reveal('.skills__text',{}); 
@@ -64,6 +64,9 @@ sr.reveal('.work__img',{interval: 200});
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
+
+// SEARCHBAR, TAGS
+
 
 
 
