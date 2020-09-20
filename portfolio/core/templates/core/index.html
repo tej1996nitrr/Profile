@@ -103,7 +103,7 @@
                         {% for post in posts %}
                         
                        <div class="work__img">
-                                <a href="http://google.com"><img src="{% static 'img/work1.jpg' %}" alt=""></a>
+                                <a href="http://google.com"><img src="{{post.url}}" alt=""></a>
                                 <div class="post-preview">
                                     <h4 class="post-title">{{post.headline}}</h4>
                                     <p class="post-intro">{{post.body}}</p>                                 

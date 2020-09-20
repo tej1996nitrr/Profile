@@ -4,7 +4,7 @@ from django.db import models
 class Skills(models.Model):
     skill = models.CharField(max_length=50, unique=True)
     url = models.URLField()
-    
+
     def __str__(self):
         return self.skill
 
@@ -15,6 +15,7 @@ class Post(models.Model):
     active = models.BooleanField(default=False)
     featured = models.BooleanField(default=False)
     body = models.TextField(null=True, blank=True)
+    url = models.URLField(default="https://google.com")
 	
     def __str__(self):
         return self.headline
