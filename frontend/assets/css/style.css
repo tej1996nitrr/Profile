@@ -751,3 +751,47 @@ svg circle:nth-child(2){
         align-items: center; */
        
 }
+.s1{
+	
+	overflow:auto;
+}
+@media screen and (max-width: 1200px){
+	.main-container{
+		width: 95%;
+	}
+}
+.main-container{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.post-wrapper{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 320px);
+	gap:20px;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+
+.post{
+	border:10px solid var(--borderColor);
+	
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+.post-preview{
+	background-color: #fff;
+	padding:15px;
+}
+
+.post-title{
+	color:black;
+	margin: 0;
+}
+
+.post-intro{
+	color:#4b5156;
+	font-size: 14px;
+}
+.link{
+  color: white;
+}

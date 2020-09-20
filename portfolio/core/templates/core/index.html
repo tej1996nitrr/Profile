@@ -95,27 +95,25 @@
                 </div>
             </section>
 
-            <section class="s1">
-                <div class="main-container">
-                    <h3 style="text-align: center;">Some of my past projects</h3>
+            <section class="work section">
+              
+                    <h2 class="section-title">Projects</h2>
         
-                    <div class="post-wrapper">
+                    <div class="work__container bd-grid">
                         {% for post in posts %}
-                        <div>
-                            <div class="post">
-                                <img class="thumbnail" src="{% static 'img/work1.jpg' %}">
+                        
+                       <div class="work__img">
+                                <a href="http://google.com"><img src="{% static 'img/work1.jpg' %}" alt=""></a>
                                 <div class="post-preview">
-                                    <h6 class="post-title">{{post.headline}}</h6>
-                                    <p class="post-intro">{{post.body}}</p>
-                                   
+                                    <h4 class="post-title">{{post.headline}}</h4>
+                                    <p class="post-intro">{{post.body}}</p>                                 
                                 </div>
                             </div>
-                        </div>
                         {% endfor %}
                     </div>
         
                    
-                </div>
+                
             </section>
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
