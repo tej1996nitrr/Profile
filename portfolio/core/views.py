@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import  Skills, Post
-# Create your views here.
 from .filters import  PostFilter
 
 def home(request):
