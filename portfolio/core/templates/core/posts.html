@@ -1,19 +1,30 @@
 {% extends 'core/layout.html' %}
 {% load static %} 
 {% block content %}
-
+{% load crispy_forms_tags %}
 <!--===== SEARch=====-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<style type="text/css"> 
+    #id_tags{
+        max-height: 100px;
+        overflow-y: scroll;
+        border: 1px solid #888;
+        border-radius: 5px;
+        padding:5px;
+    }
 
-<section class="contact section" >
+</style>
+<section class="contact section bd-grid">
     <h2 class="section-title">Search</h2>
 
     <div class="contact__container bd-grid">
         <form  method="GET" action="" class="contact__form">
-            {{myfilter.form}}
+            {{myfilter.form|crispy}}
             <input type="submit" value="Search" class="contact__button button">
         
         </form>
     </div>
+    
 </section>
 <section class="work section">
               

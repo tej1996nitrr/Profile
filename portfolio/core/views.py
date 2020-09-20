@@ -13,7 +13,8 @@ def home(request):
 
 def posts(request):
     posts = Post.objects.all()
-    myfilter = PostFilter()
+    myfilter = PostFilter(request.GET, queryset=posts)
+    posts = myfilter.qs
     context = {'posts':posts, 'myfilter': myfilter}
 
     return render(request, 'core/posts.html', context)
